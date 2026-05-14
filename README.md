@@ -45,20 +45,6 @@ Mỗi write-up không chỉ ghi lại cách solve, mà còn tập trung giải t
 - SQLMap
 - Hackvertor
 - CyberChef
-
----
-
-## 🚀 Progress
-
-| Category | Progress |
-|---|---|
-| SQL Injection | 🔥 |
-| XSS | 🔥 |
-| Authentication | 🔥 |
-| Access Control | 🔥 |
-| SSRF | ⏳ |
-| XXE | ⏳ |
-
 ---
 
 ## ⚠️ Disclaimer
