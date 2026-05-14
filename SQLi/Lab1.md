@@ -1,4 +1,4 @@
-![[Pasted image 20260515000611.png]]
+![SQLi Lab](images/Pasted%20image%2020260515000611.png)
 
 # Tổng quan về lab
 đầu tiên ta truy cập vào lab1 và xem chức năng web như người dùng bình thường
