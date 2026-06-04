@@ -24,7 +24,9 @@ Khi đến `ORDER BY 3---` thì server bị lỗi
 Tiếp theo ta xác định kiểu dữ liệu của từng cột,ta bắt đầu với thử 2 cột là text:
 ![UNION SELECT text không có FROM dual bị lỗi](images/Pasted%20image%2020260604110641.png)
 Nhưng nó lại bị lỗi Internal Server Error??
+
 Lý do:Oracle yêu cầu nếu muốn tạo chuỗi để test ta phải dùng bảng `dual` là bảng giả
+
 Vậy ta phải thêm `FROM dual`:
 ```SQL
 ' UNION SELECT 'abc','xyz' FROM dual--
