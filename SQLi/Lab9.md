@@ -25,6 +25,7 @@ https://0abd00f204c2e78d81c011ba007e005f.web-security-academy.net/filter?categor
 ```
 ![Kiểm tra kiểu dữ liệu với hai cột text](images/Pasted%20image%2020260604102619.png)
 => cả 2 cột đều là text nên ta có thể thay cột table_name vào cột nào cũng được
+
 -Ta dùng UNION SELECT để lấy ra các bảng trong database:
 ```SQL
 ' UNION SELECT NULL,table_name FROM information_schema.tables--
