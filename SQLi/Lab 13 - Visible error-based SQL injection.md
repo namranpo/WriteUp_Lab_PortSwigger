@@ -88,4 +88,6 @@ def extract_via_error():
 extract_via_error()
 ```
 Kết quả:
+
+
 <img width="762" height="113" alt="image" src="https://github.com/user-attachments/assets/9c98cd92-5fb8-49bb-a3a7-8a68341d0387" />
