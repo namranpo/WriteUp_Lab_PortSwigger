@@ -19,7 +19,7 @@ Repository này được tạo ra để lưu lại quá trình học và thực 
 - SSRF
 - XXE Injection
 - OS Command Injection
-- Và nhiều lab khác...
+- Và nhiều vuln khác...
 
 ---
 
