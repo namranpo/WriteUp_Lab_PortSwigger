@@ -15,6 +15,7 @@
 ```
 -Giải thích payload:
 + Dấu `'` dùng để đóng câu truy vấn và ta dùng `;` để dùng stack queries(Lý do cho việc này là vì Server không trả về lỗi nên ta không thể dùng `ORDER BY 1,2,3--`.Thêm cả `UNION SELECT` vì đây là câu `SELECT` gọi hàm )
+
 -Ta quay lại với Burp, viết payload + `Ctrl U` để test xem payload có hiệu quả không:
 ![Payload time-based SQLi trong Burp Repeater](images/Pasted%20image%2020260618203246.png)
 
